@@ -1,0 +1,16 @@
+{
+    "contents" : "library(shiny)\n\nshinyUI(\n  pageWithSidebar(\n    # Application title\n    headerPanel(\"Computing body mass index\"),\n    sidebarPanel(\n      numericInput('h', 'principal height measure: cm or feet', 180, min = 1, max = 250, step = 1),\n      numericInput('h2', 'secondary height measure: inches', 1, min = 1, max = 250, step = 1),\n      numericInput('w', 'weight', 70, min = 1, max = 250, step = 1),\n      selectInput('uh','Unit of height',\n                  list('centimeters'='cm',\n                       'feet/inches'='ftin')),\n      selectInput('uw','Unit of weight',\n                  list('kilograms'='kg',\n                       'pounds'='lb')),\n      \n      submitButton('Submit')\n    ),\n    mainPanel(\n      h3('Results'),\n      h4('body mass index in kg/m^2:'),\n      verbatimTextOutput(\"bmi\"),\n      h4('category:'),\n      verbatimTextOutput(\"state\")\n    )\n  )\n)\n\n\n",
+    "created" : 1408008398844.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3582445773",
+    "id" : "1D851326",
+    "lastKnownWriteTime" : 1408008081,
+    "path" : "~/personal/coursera/JH data science/dev data products/ui.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

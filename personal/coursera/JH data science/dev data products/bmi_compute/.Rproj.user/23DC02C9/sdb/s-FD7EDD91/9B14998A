@@ -1,0 +1,16 @@
+{
+    "contents" : "setwd('C:/Users/miguel.picallo.cruz/Documents/personal/coursera/JH data science/dev data products/bmi')\nlibrary(shiny)\nrunApp()\nrunApp(display.mode='showcase')\n\nlibrary(manipulate) \nmanipulate(plot(1:x), x = slider(1,100))\n\n\n\n\n\n\n\n\n\n",
+    "created" : 1408009003062.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "741554617",
+    "id" : "9B14998A",
+    "lastKnownWriteTime" : 1408009009,
+    "path" : "~/personal/coursera/JH data science/dev data products/runApps.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
